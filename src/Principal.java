@@ -10,7 +10,7 @@
 public class Principal {
 
     /**
-     * Retorna o maior elemento do vetor
+     * Retorna o maior elemento do vetor.
      * @param A vetor com os dados 
      * @return Um valor inteiro com o maior elemento do vetor
      */
@@ -25,9 +25,14 @@ public class Principal {
     }
 
     /**
-     * Counting Sort
-     * Complexidade para o pior caso Theta(k+n)
-     * Complexidade para o caso médio/esperado Theta(k+n)
+     * Counting Sort.
+     * Algoritmos de ordenação podem ser ou não in-place ou estáveis.
+     * Um método de ordenação é estável se elementos iguais ocorrem no 
+     * vetor ordenado na mesma ordem em que são passados na entrada.
+     * O CountingSort é estável. 
+     *
+     * Complexidade para o pior caso Theta(k+n).
+     * Complexidade para o caso médio/esperado Theta(k+n).
      * k pertence a O(n) portanto O(n)
      * 
      * @param A Vetor com os dados desordenados
