@@ -37,8 +37,8 @@ public class Principal {
      */
     public static void countingSort(int[] A, int[] B, int n, int k) {
 
-        //Cria o vetor auxiliar C com base no tamanho de A
-        int C[] = new int[n];
+        //Cria o vetor auxiliar C com base do maior elemento de A
+        int C[] = new int[k+1];
         
         //Inicializar com zero o vetor auxiliar C
         for (int i = 0; i <= k; i++) {
@@ -55,7 +55,7 @@ public class Principal {
         for (int i = 1; i <= k; i++) {
             C[i] = C[i] + C[i - 1];
         }
-        //Classifica o vetor da direita para a esquerda
+        // Classifica o vetor da direita para a esquerda
         // Procure no vetor de ocorrências a última ocorrência do valor dado
         // Coloca no vetor ordenado
         // Decrementa o índice da última ocorrência do valor dado
