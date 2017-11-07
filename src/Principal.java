@@ -4,8 +4,7 @@
  * Programa de Pós-Graduação em Ciências da Computação - PROPG
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
- * Baseado nos slides 110 da aula do dia 15/09/2017 
- * Mergesort sem sentinela
+ * Baseado nos slides 110 da aula do dia 15/09/2017  
  */
 public class Principal {
 
