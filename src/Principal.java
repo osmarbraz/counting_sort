@@ -4,7 +4,10 @@
  * Programa de Pós-Graduação em Ciências da Computação - PROPG
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
+ *
  * Baseado nos slides 110 da aula do dia 15/09/2017  
+ *
+ * Algoritmo CountingSort
  */
 
 /**
@@ -46,9 +49,10 @@ public class Principal {
     public static void countingSort(int[] A, int[] B, int n, int k) {
 
         //Cria o vetor auxiliar C com base do maior elemento de A
+        // Se k varia até 5, ou seja, de 0 a 5, então são necessários k+1 elementos
         int C[] = new int[k+1];
         
-        //Inicializar com zero o vetor auxiliar C
+        //Inicializar com zero o vetor auxiliar C        
         for (int i = 0; i <= k; i++) {
             C[i] = 0;
         }
@@ -87,8 +91,8 @@ public class Principal {
         for (int i = 0; i < n; i++) {
             System.out.println((i + 1) + " - " + A[i]);
         }
-
-        //Maior valor do vetor A
+        
+        // Busca o maior elemento a fim de determinar o limite de número de 0 até o maior elemento
         int k = maiorElemento(A);
         //Vetor para receber os dados ordenados, com tamanho igual ao vetor A
         int B[] = new int[A.length];
