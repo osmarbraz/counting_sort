@@ -7,7 +7,15 @@
  *
  * Baseado nos slides 110 da aula do dia 15/09/2017  
  *
+ * Página 140 Cormen 3 ed
+ *
  * Algoritmo CountingSort
+ *
+ * Atenção:
+ * Vetor em java inicia em 0, os algoritmos consideram início em 1.
+ * A subtraçào de -1 ocorre somente no local de acesso ao vetor ou matriz 
+ * para manter a compatibilidade entre os algoritmos.
+ * 
  */
 
 /**
@@ -21,10 +29,10 @@ public class Principal {
      * @return Um valor inteiro com o maior elemento do vetor
      */
     public static int maiorElemento(int[] A) {
-        int maior = A[0];
-        for (int i = 1; i < A.length; i++) {
-            if (A[i] > maior) {
-                maior = A[i];
+        int maior = A[1-1];
+        for (int i = 1; i <= A.length; i++) {
+            if (A[i-1] > maior) {
+                maior = A[i-1];
             }
         }
         return maior;
@@ -59,8 +67,8 @@ public class Principal {
 
         //Realiza a contagem das ocorrencias
         //C[j] É o número de A[j] tais que A[j] = i
-        for (int j = 0; j < n; j++) {
-            C[A[j]] = C[A[j]] + 1;
+        for (int j = 1; j <= n; j++) {
+            C[A[j-1]] = (C[A[j-1]]) + 1;
         }
         //Orrdenando os indices do vetor auxiliar C
         //C[i] é o número de js tais que A[j] 
@@ -73,9 +81,9 @@ public class Principal {
         // Decrementa o índice da última ocorrência do valor dado
         // Continue com o valor anterior do vetor de entrada, termina se todos os valores já foram classificados
         // n - 1 pois vetor em java começa em 0 zero
-        for (int j = n - 1; j >= 0; j--) {
-            B[C[A[j]] - 1] = A[j];
-            C[A[j]] = C[A[j]] - 1;
+        for (int j = n; j >= 1; j--) {
+            B[C[A[j-1]] - 1] = A[j-1];
+            C[A[j-1]] = C[A[j-1]] - 1;
         }
     }
 
