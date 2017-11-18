@@ -9,7 +9,7 @@
  *
  * Página 140 Cormen 3 ed
  *
- * Algoritmo CountingSort
+ * Algoritmo CountingSort/Ordenação Digital
  *
  * Atenção:
  * Vetor em java inicia em 0, os algoritmos consideram início em 1.
@@ -88,13 +88,14 @@ public class Principal {
     }
 
     public static void main(String args[]) {
+        
         //Vetor dos dados    
         int A[] = {5, 7, 6, 0, 1, 3, 2, 4};
 
         //Tamanho do vetor
         int n = A.length;
 
-        System.out.println(">>> CountingSort <<<");
+        System.out.println(">>> Algoritmo CountingSort/Ordenação Digital <<<");
         System.out.println("Original: ");
         for (int i = 0; i < n; i++) {
             System.out.println((i + 1) + " - " + A[i]);
