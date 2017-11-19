@@ -7,7 +7,7 @@
  *
  * Baseado nos slides 110 da aula do dia 15/09/2017  
  *
- * Página 140 Cormen 3 ed
+ * Página 140 Thomas H. Cormen 3 ed
  *
  * Algoritmo CountingSort/Ordenação Digital
  *
